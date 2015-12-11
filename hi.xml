@@ -1,51 +1,23 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="165" inline="true" x="6" y="19">
-    <value name="TIMES">
-      <block type="math_number" id="173">
-        <field name="NUM">999</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="10">
-        <next>
-          <block type="robot_delay" id="83" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="102">
-                <field name="NUM">500</field>
+  <block type="oled_cleardisplay" id="267" x="30" y="105">
+    <next>
+      <block type="controls_repeat" id="304" inline="true">
+        <value name="TIMES">
+          <block type="math_arithmetic" id="217" inline="true">
+            <field name="OP">ADD</field>
+            <value name="A">
+              <block type="math_number" id="230">
+                <field name="NUM">9</field>
               </block>
             </value>
-            <next>
-              <block type="movement_reverse" id="20">
-                <next>
-                  <block type="robot_delay" id="113" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="175">
-                        <field name="NUM">500</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_left" id="112">
-                        <next>
-                          <block type="robot_delay" id="115" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="116">
-                                <field name="NUM">500</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="movement_right" id="126"></block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
+            <value name="B">
+              <block type="math_number" id="231">
+                <field name="NUM">10</field>
               </block>
-            </next>
+            </value>
           </block>
-        </next>
+        </value>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
